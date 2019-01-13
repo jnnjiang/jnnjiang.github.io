@@ -4,16 +4,16 @@
 
 # Site
 title: Michelle's Home
-subtitle:
-description:
+subtitle: 纳纳的小窝
+description: 学习笔记、工作心得
 keywords:
-author: Nana Jiang
-language:
+author: 江纳纳
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://jnnjiang.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -29,13 +29,13 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
-render_drafts: false
-post_asset_folder: false
+render_drafts: true
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -69,6 +69,25 @@ time_format: HH:mm:ss
 ## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
+
+archive_generator:
+  per_page: 20  //为0时表示不分页全展示
+  yearly: true  //按年生成归档
+  monthly: true //按月生成归档
+
+tag_generator:
+  per_page: 10
+
+category_generator:
+  per_page: 10
+  
+toc:
+  maxdepth: 4
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+
+
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

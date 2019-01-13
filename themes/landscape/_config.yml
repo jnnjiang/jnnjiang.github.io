@@ -1,20 +1,24 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
+  首页: /
+  归档: /archives
+  #分类: /categories
+  #标签: /tags
+  #随笔: /essay
+  #关于: /2019/01/13/test
+#rss: /atom.xml
 
 # Content
 excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: left
 widgets:
 - category
 - tag
-- tagcloud
-- archive
+#- tagcloud
+#- archive
 - recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)
@@ -23,9 +27,10 @@ index_widgets:
 # - tagcloud
 # - archive
 
+
 # widget behavior
 archive_type: 'monthly'
-show_count: false
+show_count: true
 
 # Miscellaneous
 google_analytics:
