@@ -2,10 +2,7 @@
 title: 安装git
 date: 2019-01-11 18:00:46
 tags:
-categories: 
-    - aa
-    - vf
-    - bb
+permalink: git
 ---
 
 ## 安装git
@@ -15,5 +12,3 @@ $ sudo apt-get install git
 ## 安装图形化工具gitk，方便查看整个项目的提交情况
 
 {% post_link 6.gitk-mac %}
-
-[jjjj](./gitk-mac.md)
