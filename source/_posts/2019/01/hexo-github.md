@@ -96,3 +96,24 @@ $ npm install
 ```
 这里尤其要中注意_config.yml文件，在这个文件里，可以配置网站的大部分参数。
 配置详见{% post_link hexo+config hexo配置 %}
+
+## 配置.deploy中git账户
+使用`hexo d`将代码推送到github时，如果之前配置过git账户，但是提交是想用新的git账户，而在没有执行`hexo d`之前，`.deploy`文件夹是不会生成的，这种情况下改怎么办呢？
+1.执行`hexo d`推送一次代码。需要输入用户名和密码的时候，输入新账户的
+2.登录github，将项目的默认分支设置成其他分支，然后删除master分支（blog默认是推送到master分支的，否则无法正常工作）
+3.进入本地`.deploy/` 文件夹，配置新的git账户新
+```
+git config user.name "xxx"
+git config user.email "xxx"
+git config credential.hepler store
+```
+4.将`.deploy/.git/config`文件保存到项目外
+5.删除`.deploy/.git`文件夹
+6.重新创建仓库
+```
+cd .deploy
+git init
+```
+7.将第4步中保存的config文件复制到`.deploy/.git/`下。
+8.执行`hexo d`重新推送代码，这时候会发现远端存在一个干净的分支，用户名也变成新的了
+9.切换默认分支。
