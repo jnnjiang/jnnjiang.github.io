@@ -109,12 +109,12 @@ toc:
   slugify: transliteration
   decodeEntities: false
 
-feed:
+feed: # RSS订阅插件
   type: atom
   path: atom.xml
-  limit: 20
-  hub:
-  content:
+  limit: 0
+
+plugins: hexo-generate-feed
 
 search:
   type: search
@@ -122,11 +122,13 @@ search:
   field: all
   content: true
   limit: 10000
+sitemap:
+    path: sitemap.xml
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
