@@ -2,10 +2,9 @@
 title: Mac系统安装gitk
 date: 2019-01-12 11:55:46
 tags: 
-    - gitk
-    - mac
+    - 常用工具
 categories:
-    - git
+    - Mac
 ---
 # gitk for mac
 1.如果没有安装brew，则需要先安装brew

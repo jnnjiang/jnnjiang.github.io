@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://localhost:4000/
+url: https://jnnjiang.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -55,9 +55,29 @@ index_generator:
   
 # Category & Tag
 default_category: uncategorized
-category_map: 
-         
+category_map: #冒号前面是分类名称，后面是访问路径
+  Android: Android
+  Java: Java
+  Hexo: Hexo
+  Web前端: Web
+  Linux: linux
+  Mac: mac
+    
 tag_map:
+  - Android Studio: android-studio
+  - Android API: android-API
+  - Android Widget: android-widget
+  - Android 源码分析: android-source
+  - JDK: JDK
+  - Hexo建站: hexo-blog
+  - Hexo 配置: hexo-config
+  - Hexo 主题: hexo-themes
+  - EJS教程: ejs
+  - HTML5: html
+  - CSS3: css 
+  - JS: js
+  - git: git
+  - 常用工具: tools
          
 
 # Date / Time format

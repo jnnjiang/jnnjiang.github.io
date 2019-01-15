@@ -4,9 +4,9 @@ permalink: hexo+config
 toc: true
 date: 2019-01-14 16:15:43
 tags:
-  - hexo config
+  - Hexo 配置
 categories:
-  - hexo
+  - Hexo
 ---
 
 ## 修改Banner图

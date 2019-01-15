@@ -4,11 +4,9 @@ permalink: hexo+github
 toc: true
 date: 2019-01-14 16:14:17
 tags:
-    - git
-    - nodejs
-    - github
+    - Hexo建站
 categories:
-    - hexo
+    - Hexo
 ---
 
 ## hexo 简介
