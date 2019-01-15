@@ -4,8 +4,8 @@
 
 # Site
 title: Michelle's Home
-subtitle: 纳纳的小窝
-description: 学习笔记、工作心得
+subtitle: 回望来时的路。。。
+description: 一直忙于奔跑的孩纸，现在需要回头数数自己留下的脚印了。。。
 keywords:
 author: 江纳纳
 language: zh-CN
@@ -64,20 +64,20 @@ category_map: #冒号前面是分类名称，后面是访问路径
   Mac: mac
     
 tag_map:
-  - Android Studio: android-studio
-  - Android API: android-API
-  - Android Widget: android-widget
-  - Android 源码分析: android-source
-  - JDK: JDK
-  - Hexo建站: hexo-blog
-  - Hexo 配置: hexo-config
-  - Hexo 主题: hexo-themes
-  - EJS教程: ejs
-  - HTML5: html
-  - CSS3: css 
-  - JS: js
-  - git: git
-  - 常用工具: tools
+  Android Studio: android-studio
+  Android API: android-API
+  Android Widget: android-widget
+  Android 源码分析: android-source
+  JDK: JDK
+  Hexo建站: hexo-blog
+  Hexo 配置: hexo-config
+  Hexo 主题: hexo-themes
+  EJS教程: ejs
+  HTML5: html
+  CSS3: css 
+  JS: js
+  git: git
+  常用工具: tools
          
 
 # Date / Time format

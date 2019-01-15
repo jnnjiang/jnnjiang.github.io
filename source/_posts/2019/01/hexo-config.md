@@ -371,6 +371,50 @@ npm uninstall hexo-generator-category --save
 ```
 npm install hexo-generator-tag --save
 ```
+## 标签、分类别名
+为了避免在分类或标签的url中产生中文，可以设置标签、分类的别名
+```
+category_map: #冒号前面是分类名称，后面是访问路径
+  Android: Android
+  Java: Java
+  Hexo: Hexo
+  Web前端: Web
+  Linux: linux
+  Mac: mac
+```
+```
+tag_map:
+  Android Studio: android-studio
+  Android API: android-API
+  Android Widget: android-widget
+  Android 源码分析: android-source
+  JDK: JDK
+  Hexo建站: hexo-blog
+  Hexo 配置: hexo-config
+  Hexo 主题: hexo-themes
+  EJS教程: ejs
+  HTML5: html
+  CSS3: css 
+  JS: js
+  git: git
+  常用工具: tools
+         
+
+```
+使用：
+```
+---
+title: hexo配置-打造自己的博客（基于landscape主题）
+permalink: hexo+config
+toc: true
+date: 2019-01-14 16:15:43
+tags:
+  - Hexo 配置
+categories:
+  - Hexo
+---
+```
+这样在博客中显示的是`Hexo 配置`，在url中显示的是`hexo-config`
 
 ## 站内搜索
 https://segmentfault.com/a/1190000011917419
