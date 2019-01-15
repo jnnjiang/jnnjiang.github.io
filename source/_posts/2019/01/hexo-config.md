@@ -1,10 +1,12 @@
 ---
-title: hexo配置
+title: hexo配置-打造自己的博客（基于landscape主题）
 permalink: hexo+config
 toc: true
-date: 2019-01-14 16:13:43
+date: 2019-01-14 16:15:43
 tags:
+  - hexo config
 categories:
+  - hexo
 ---
 
 ## 修改Banner图
@@ -330,6 +332,46 @@ show_count: true
 修改后：
 {% asset_img delete-category.png gfg %}
 
+## 关于，去掉文章中的日期
+Landscape主题，通过`hexo new page pagename`创建的页面，默认是显示日期的，但是像`关于`这种页面，我们并不希望它显示日期，那么就需要修改`article.ejs`，控制日期的显示
+1.修改`scaffolds/page.md`，自定义变量`show_date`，将其值设为`false`
+```
+---
+title: {{ title }}
+date: {{ date }}
+show_date: false
+---
+```
+2.修改`themes/landscape/layout/_partial/article.ejs`，具体如下：
+修改前：
+```
+ <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+```
+修改后：
+```
+<% if(typeof(post.show_date)!= "undefined" && !post.show_date){ %> //前一个条件是判断变量是否存在，因为之前写的文章里并没有这个变量，但是却是要显示日期的。
+
+      <% }else{ %>
+        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+        <!--<%- partial('post/category') %>首页文章日期后面不显示分类-->
+    <% } %>
+```
+## 侧边栏显示分类
+安装分类插件：
+```
+npm install hexo-generator-category --save
+```
+卸载可执行
+```
+npm uninstall hexo-generator-category --save
+```
+那样点击侧边栏的分类，将会提示找不到网页
+## 侧边栏显示标签
+安装标签插件：
+```
+npm install hexo-generator-tag --save
+```
+
 ## 站内搜索
 https://segmentfault.com/a/1190000011917419
 这个应该是和主题相关的，好像需要自己写
@@ -345,5 +387,5 @@ https://www.jianshu.com/p/b96fd206571a
 https://mrcxt.github.io/hexo/%E8%A7%A3%E5%86%B3hexo%E4%B8%8B%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/
 https://blog.csdn.net/qq_32337109/article/details/78755662
 https://www.jianshu.com/p/a6a72ed6aa2a
-
-
+## 统计
+## 评论

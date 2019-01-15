@@ -1,7 +1,12 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <!--<%- partial('post/category') %>首页文章日期后面不显示分类-->
+    <% if(typeof(post.show_date)!= "undefined" && !post.show_date){ %>
+
+      <% }else{ %>
+        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+        <!--<%- partial('post/category') %>首页文章日期后面不显示分类-->
+    <% } %>
+  
   </div>
   <div class="article-inner">
     <%- partial('post/gallery') %>

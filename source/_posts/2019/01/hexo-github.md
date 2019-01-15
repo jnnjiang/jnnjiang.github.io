@@ -4,7 +4,11 @@ permalink: hexo+github
 toc: true
 date: 2019-01-14 16:14:17
 tags:
+    - git
+    - nodejs
+    - github
 categories:
+    - hexo
 ---
 
 ## hexo 简介
@@ -46,8 +50,13 @@ v10.15.
 ```
 ### 安装git
 #### Linux
+安装git：
 ```
-sudp apt-get install git
+sudo apt-get install git
+```
+安装gitk:
+```
+sudo apt-get install gitk
 ```
 #### Mac
 虽然Mac自带git，但是为了方便后续用gitk查看代码提交情况，建议，用brew重新安装带gitk的git
@@ -96,6 +105,45 @@ $ npm install
 ```
 这里尤其要中注意_config.yml文件，在这个文件里，可以配置网站的大部分参数。
 配置详见{% post_link hexo+config hexo配置 %}
+
+## 预览
+```
+hexo g
+hexo s
+```
+## 关联github
+1.在github上创建项目，项目名为`{username}.github.io`
+
+## 部署
+1. 打开 Hexo 博客主配置文件 _config.yml，找到 deploy 属性，作如下配置：
+```
+deploy:
+    type: git
+    repository: https://github.com/jnnjiang/jnnjiang.github.io.git
+    branch: master
+```
+
+2. 在`.deploy_git/`下配置github账号：
+```
+git config user.name "xxxx"
+git config user.email "xxxx"
+```
+
+如果没有`.deploy_git/`文件也不用担心，执行下`hexo d`就会生成，执行的过程中会报错，不用担心，按照步骤2配置账号信息即可。
+3. 执行如下命令：
+```
+hexo g
+hexo d
+```
+按照提示输入github账号的用户名和密码即可。
+
+4.如果不想每次都输入用户名和密码，可以通过配置`./git/config`实现：
+```
+git config credential.helper store
+```
+然后部署时输入一次用户名和密码即可，此时会在user下面生成`.git-credentials`文件。
+以后在部署就不用输入用户名和密码了。
+
 
 ## 配置.deploy中git账户
 使用`hexo d`将代码推送到github时，如果之前配置过git账户，但是提交是想用新的git账户，而在没有执行`hexo d`之前，`.deploy`文件夹是不会生成的，这种情况下改怎么办呢？

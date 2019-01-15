@@ -3,7 +3,7 @@ menu:
   首页: /
   归档: /archives
   #分类: /categories
-  #标签: /tags/
+  #标签: /tags
   #随笔: /essay
   关于: /about
 #rss: /atom.xml
@@ -31,6 +31,9 @@ index_widgets:
 # widget behavior
 archive_type: 'monthly'
 show_count: true
+
+local_search:
+    enable: true
 
 # Miscellaneous
 google_analytics:
