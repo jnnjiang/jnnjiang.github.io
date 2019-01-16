@@ -13,6 +13,7 @@ categories:
 替换themes/landscape/source/css/images/banner.jpg下的图片即可。
 注意命名一定要是`banner.jpg`
 
+<!-- more -->
 ## 修改标题、副标题、博客描述、语言
 修改根目录下_config.yml文件
 ```

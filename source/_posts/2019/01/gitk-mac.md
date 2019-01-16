@@ -9,6 +9,7 @@ categories: Mac
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+<!-- more -->
 2.由于系统自带的git中没有gitk，所以需要重新安装
     1)查看系统git的位置
     ```
