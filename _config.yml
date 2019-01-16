@@ -62,6 +62,7 @@ category_map: #冒号前面是分类名称，后面是访问路径
   Web前端: Web
   Linux: linux
   Mac: mac
+  主题: theme
     
 tag_map:
   Android Studio: android-studio
@@ -78,6 +79,7 @@ tag_map:
   JS: js
   git: git
   常用工具: tools
+  NexT: theme-next
          
 
 # Date / Time format
