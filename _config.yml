@@ -80,6 +80,7 @@ tag_map:
   git: git
   常用工具: tools
   NexT: theme-next
+  git子项目: git-submodule
          
 
 # Date / Time format
