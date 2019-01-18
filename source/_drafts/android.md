@@ -23,3 +23,8 @@ Before the Android system can start an app component such as an Activity, the sy
 
 The minSdkVersion and targetSdkVersion settings in build.gradle will override any AndroidManifest.xml settings for the minimum SDK version and the target SDK version. gradle文件中的sdk版本配置信息会覆盖AndroidManifest.xml文件中的配置信息。
 [android常用的groovy语法](http://google.github.io/android-gradle-dsl/current/index.html)
+
+https://developer.android.com/courses/
+https://material.io/design/color/#color-theme-creation
+https://developer.android.com/guide/topics/ui/look-and-feel/themes
+https://www.color-hex.com/
