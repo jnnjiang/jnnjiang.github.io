@@ -8,8 +8,8 @@ categories:
 ---
 
 debug的工具：
-- The Logcat pane for log messages
-- The Debugger pane for viewing frames, threads, and variables
+- The <b>Logcat</b> pane for log messages
+- The <b>Debugger</b> pane for viewing frames, threads, and variables
 - Debug mode for running apps with breakpoints
 - Test frameworks such as JUnit or Espresso
 - Dalvik Debug Monitor Server (DDMS), to track resource usage
