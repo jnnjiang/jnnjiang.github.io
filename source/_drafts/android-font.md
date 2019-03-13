@@ -25,6 +25,7 @@ categories:
 
 ## 从Android 8.0(API 26)开始，支持通过资源文件的方式引用字库
 
+[在项目中引用字体的三种方式](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml)
 
 通常我们在xml文件用引用字体，都是修改一下几个属性
 ```
