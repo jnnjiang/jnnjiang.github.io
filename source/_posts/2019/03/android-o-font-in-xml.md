@@ -47,6 +47,7 @@ Android 8.0（API 26 Oreo）引入了可以在xml文件中配置字体的新功�
         android:font="@font/lobster_italic" />
 </font-family>
 ```
+注：`android:fontWeight`的值是正数，且是100的倍数，在100和900之间，一般 用400表示regular，700表示bold。
 2.然后在xml文件像引用普通字体一样引用字体文件：
 ```
 <TextView
