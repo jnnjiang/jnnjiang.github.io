@@ -27,7 +27,7 @@ language: zh-CN //必须和主题中languages包中文件名相同
 timezone:
 ```
 修改之后：
-![](home-config.png)
+![](http://wx4.sinaimg.cn/small/94805fably1g193rqm684j20iv05s435.jpg)
 
 ## 对source文件夹下文章md文件分类
 我的是按月归档的。操作步骤如下：
@@ -135,7 +135,6 @@ toc: false
 ```
 ![](/images/hexo-image.jpeg)
 ```
-![](/images/hexo-image.jpeg)
 
 #### 在source/_posts/下生成和文件名相同的文件夹
 step1：
@@ -164,7 +163,6 @@ hexo new "insert-image"
 ```
 ![](hexo-image.jpeg)
 ```
-![](hexo-image.jpeg)
 注：括号内只需要填入文件名即可。
 
 引用方式二：
@@ -268,9 +266,9 @@ archive_type: 'monthly'
 show_count: true
 ```
 修改前：
-![](category-no-count.png)
+![](http://wx4.sinaimg.cn/small/94805fably1g193s4bh8kj2095055web.jpg)
 修改后：
-![](category-with-count.png)
+![](http://wx2.sinaimg.cn/small/94805fably1g193s0bbuxj208y04w3yd.jpg)
 
 ## 给首页文件增加`阅读全文`
 ### 方式一：使用`<!--more-->` 标记
@@ -331,7 +329,7 @@ show_count: true
 ```
 默认：
 修改后：
-{% asset_img delete-category.png gfg %}
+![](http://wx4.sinaimg.cn/mw690/94805fably1g193rvhuxlj20po0a1mxq.jpg)
 
 ## 关于，去掉文章中的日期
 Landscape主题，通过`hexo new page pagename`创建的页面，默认是显示日期的，但是像`关于`这种页面，我们并不希望它显示日期，那么就需要修改`article.ejs`，控制日期的显示
