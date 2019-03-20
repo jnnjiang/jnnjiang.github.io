@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://jnnjiang.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:category/:title.html
 permalink_defaults:
 
 # Directory
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false #set false，article will not show on home
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -56,13 +56,26 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map: #冒号前面是分类名称，后面是访问路径
-  Android: Android
-  Java: Java
-  Hexo: Hexo
-  Web前端: Web
+# 一级分类
+  Android: android
+  Java: java
+  Hexo: hexo
+  Web前端: web
   Linux: linux
   Mac: mac
+  设计: design
+# 二级分类
+  学习笔记: learning
+  API: api
   主题: theme
+  CSS: css
+  HTML5: html
+  JavaScript: js
+  常用命令: command
+  反编译: reverse
+  安全: security
+  优化: optimization
+  Material Design: material-design
     
 tag_map:
   Android Studio: android-studio

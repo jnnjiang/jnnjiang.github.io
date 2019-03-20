@@ -1,11 +1,19 @@
 ---
 title: textview
 permalink: textview
+categories:
+  - Android
+  - Learning
 toc: false
 date: 2019-01-18 15:36:15
 tags:
-categories:
 ---
+
+
+
+
+
+
 - `android:text`: Set the text to display.
 - `android:textColor`: Set the color of the text. You can set the attribute to a color value, a predefined resource, or a theme. Color resources and themes are described in other chapters.
 - `android:textAppearance`: The appearance of the text, including its color, typeface, style, and size. You set this attribute to a predefined style resource or theme that already defines these values.
