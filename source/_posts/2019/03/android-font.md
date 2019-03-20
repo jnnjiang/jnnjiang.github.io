@@ -1,10 +1,12 @@
 ---
-title: android-font
+title: android字体详解
 permalink: android-font
 toc: false
-date: 2019-01-25 10:04:09
+date: 2019-03-18 10:04:09
 tags:
 categories:
+    - Android
+    - 字体
 ---
 最近了解了一下字体，发现彻底解释明白这件事情真的很不容易。
 
