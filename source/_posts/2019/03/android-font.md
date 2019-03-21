@@ -26,6 +26,7 @@ categories:
 |900	|Black (Heavy)
 
 注：为什么说是通常呢？因为在有些字库下是有差异的，比如在Adobe Typekit字库中对字重描述的划分列表中，它列出Heavy指的是800而不是900。另外，在我们日常使用的Photoshop和Sketch里面，Ultra Light是100，而Thin是200。
+<!-- more -->
 
 css中还有bolder、lighter
 bolder、lighter表示其字重值是基于从其父元素继承而来的字重计算所得的，与normal、bold所代表的字重并无关系。
@@ -49,14 +50,12 @@ bolder、lighter表示其字重值是基于从其父元素继承而来的字重�
 - 如果所需的字重是400，那么会优先匹配500对应的字重，如仍没有，那么执行第一条所需字重小于400的规则。
 - 如果所需的字重是500，则优先匹配400对应的字重，如仍没有，那么执行第二条所需字重大于500的规则。
 
-## 从Android 8.0(API 26)开始，支持通过资源文件的方式引用字库
-
-[在项目中引用字体的三种方式](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml)
-
-通常我们在xml文件用引用字体，都是修改一下几个属性
-```
-```
-
+## 衬线字体（serif）和无衬线字体（sans serif）
 西方国家字母体系分为两类：衬线字体（serif）以及无衬线体（sans serif）。
 衬线字体，意思是在字的笔画开始、结束的地方有额外的装饰，而且笔画的粗细会有所不同。
 无衬线体是无衬线字体，没有这些额外的装饰，而且笔画的粗细差不多。
+
+## 从Android 8.0(API 26)开始，支持通过资源文件的方式引用字库
+
+详见[android O 在xml文件中引用字体](https://jnnjiang.github.io/2019/03/20/android/font/android-o-font-in-xml.html)
+
