@@ -6,5 +6,5 @@ updated: {{date}}
 comments: true
 tags:
 categories: 
-toc: false
+toc: true
 ---

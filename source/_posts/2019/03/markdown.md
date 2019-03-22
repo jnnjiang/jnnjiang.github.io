@@ -48,6 +48,7 @@ categories:
 - 链接：[title](url)
 - 加粗：**文本**
 - 斜体：*ABC*
+- 粗斜体：***粗斜体文本***
 - 高亮：==高亮==
 - 段落：段落之间空一行
 - 换行符：一行结束时输入两个空格
@@ -146,8 +147,10 @@ ___
 ```
 代码块
 ```
-### 加强代码块
-使用“```”+“语言名称”进行标记,eg Java，python，JavaScript，C，C++等
+### 高亮代码块中的关键字或方法
+使用“\```+语言名称” + \“```”进行标记,
+目前支持的语言有：
+1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir
 ```
     ```Java
     public static void showDialog(Context context, View view) {
@@ -315,7 +318,9 @@ ___
 -----
 
 ## 生成目录
-在文章的开头使用[toc]，但是有些编辑器不支持，比如简书
+使用[toc]生成目录，但是有些编辑器不支持，比如简书
+
+注：想在那个位置生成目录，就写在哪个位置，一般在文正的开头。
 ## 脚注
 使用 [^keyword] 表示注脚。
 
