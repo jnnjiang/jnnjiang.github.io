@@ -48,10 +48,3 @@ git push origin src:src
 
 ## Tips
 1.如果电脑上之前配置了git账户，那么执行`hexo d`时，默认会使用已经配置的git的账户。关于`.deploy`中git账户的配置，可以参见{% post_link hexo+github hexo+github搭建自己的博客 %}中`配置.deploy中git账户`一节。
-
-
-项目     | 价格
--------- | ---
-Computer | $1600
-Phone    | $12
-Pipe     | $1

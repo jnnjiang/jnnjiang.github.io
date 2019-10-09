@@ -20,7 +20,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 2.解压到当前目录（Download）
 3.移动到指定目录
 ```
-mv Download/node-v10.15.0/ Tools/nodejs/
+mv Download/node-v10.15.0 Tools/nodejs
 ```
 4.查看版本
 ```
